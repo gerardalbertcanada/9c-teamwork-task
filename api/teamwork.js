@@ -19,7 +19,8 @@ export default async function handler(req, res) {
   }
 
   const TEAMWORK_URL = process.env.TEAMWORK_URL || 'https://9cloudwebworks.teamwork.com';
-  const API_KEY = process.env.TEAMWORK_API_KEY;
+  const API_KEY = process.env.TEAMWORK_API_KEY || 'twp_kouI7Vd8IetzZ1b88Y7L8vf6Xm0K';
+  
 
   if (!API_KEY) {
     res.status(500).json({
